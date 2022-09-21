@@ -1,0 +1,5 @@
+<%= form_with model: @project, url: projects_path, method: :post, class: 'form' do |f| %>
+  <div><%= f.label :name, 'Name' %><br><%= f.text_field :name %></div>
+  <div><%= f.label :description, 'Description' %><br><%= f.text_area   :description %></div>
+  <div> <%= f.submit "Create Project" %> </div>
+<% end %>
